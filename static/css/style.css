@@ -1,0 +1,178 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+header {
+    color: white;
+    background-color: #912418;
+    padding: 0em 1em;
+}
+
+header > h1 {
+    font-weight: 300;
+    margin: 0;
+}
+
+header > nav {
+    background-color: #eee;
+    border-radius: 0.1em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 0;
+}
+
+header > h1 > a:link {
+    color: black;
+    text-decoration: none;
+}
+header > h1 > a:visited {
+    color: black;
+    text-decoration: none;
+}
+header > h1 > a:hover {
+    color: black;
+    text-decoration: none;
+}
+header > h1 > a:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+header > nav > ul {
+    display: flex;
+    padding: .5em;
+    list-style-type: none;
+}
+
+header > nav > ul > li {
+    margin-top: 0;
+}
+
+header > nav > ul > li + li {
+    padding-left: 1em;
+}
+
+header > nav > ul > li > a {
+   text-decoration: none;
+   color: black;
+}
+
+header > nav > ul > li > a:hover {
+   text-decoration: underline;
+   color: #373F47;
+}
+
+
+main {
+    padding: 0em 1.5em;
+}
+
+main > article > h2 {
+    margin-bottom: 0.4em;
+}
+
+main > article > h2 > a {
+    color: black;
+    text-decoration: none;
+}
+
+main > article > h2 > a {
+    color: black;
+    text-decoration: none;
+}
+
+main > article > h2 > a:link {
+    color: black;
+}
+
+main > article > h2 > a:visited {
+    color: black;
+}
+
+main > article > h2 > a:hover {
+    color: #373F47;
+    text-decoration: underline;
+}
+
+main > article > h2 > a:active {
+    color: black;
+}
+
+.left {
+  float: left;
+  margin-right: 1em;
+}
+
+.right {
+  float: right;
+  margin-left: 1em;
+}
+
+table, td, th {
+  border: 1px solid;
+}
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.3em 1em;
+}
+
+/* Styling for Pen, unrelated to float */
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    max-width: 30%;
+    margin: 1em;
+}
+
+@media all and (max-width: 950px) {
+    article {
+        max-width: 95%;
+    }
+
+    figure img {
+        max-width: 100%;
+        margin: 1em 0;
+    }
+}
+
+mark {
+    background-color: #eee;
+    color: #912418;
+}
+
+.example-list > li {
+  list-style-type: circle;
+}
+
+.headerlink {
+    color: #eee;
+    text-decoration: none;
+}
+
+.headerlink:hover {
+    color: #912418;
+}
