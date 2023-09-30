@@ -12,14 +12,16 @@
       <nav>
         <ul>
           <li><a href="/">дом</a></li>
-          <li><a href="/exercises.html">упражнений</a></li>
+          <li><a href="/exercises">упражнений</a></li>
         </ul>
       </nav>
     </header>
     <main>
+        <figure>
+            <img class='left' src='/static/img/lamp.png'>
+        </figure>
         <article>
-            <h2><a href="/posts/prepositions.html">урок: prepositions</a></h2>
-            <small>сентябрь 27, 2023</small>
+            <h2><a href="/exercises/conjugations">a) упражнение: conjugations</a></h2>
             <br>
         </article>
     </main>
