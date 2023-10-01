@@ -23,30 +23,37 @@
                 <a class="headerlink" href="#whatis" title="Permalink to this heading">"</a>
             </h3>
             <p>
-                Write the conjugated form of the verb then hit next.
+                Write the conjugated form of the verb.
             </p>
 
-        <div>
-            <label for=""><?=$pronoun?> (<?=$verb?>)</label>
-            <br>
-            <input id="word">
-            <button onclick="validate('word', '<?=$russian_verbs[$verb][$pronoun]?>')">
-                check
-            </button>
-        </div>
+        <?php
+            for ($i = 0; $i < 5; $i++) {
+                // get a random verb and pronoun
+                $verb = array_rand($russian_verbs);
+                $pronoun = $pronouns[array_rand($pronouns)];
+        ?>
+            <div>
+                <label for=""><?=$i + 1?>: <?=$pronoun?> (<?=$verb?>)</label>
+                <br>
+                <input id="<?=$pronoun?>-<?=$verb?>">
+                <button onclick="validate('<?=$pronoun?>-<?=$verb?>', '<?=$russian_verbs[$verb][$pronoun]?>')">
+                    check
+                </button>
+            </div>
+        <?php
+            }
+        ?>
         <script>
             function validate(input_id, answer) {
-                if (document.getElementById(input_id).value == answer) {
-                    alert('correct');
+                const input = document.getElementById(input_id);
+                if (input.value.trim() == answer) {
+                    input.style.color = 'green';
                     return;
                 }
-                alert('not correct');
+                input.style.color = 'red';
             }
         </script>
 
-        <?php
-            //echo "Он $verb: " . $russian_verbs[$verb][$pronoun];
-        ?>
     </main>
 </body>
 </html>
