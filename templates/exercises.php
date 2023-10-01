@@ -18,10 +18,11 @@
     </header>
     <main>
         <figure>
-            <img class='left' src='/static/img/lamp.png'>
+            <img class='right' src='/static/img/lamp.png'>
         </figure>
         <article>
-            <h2><a href="/exercises/conjugations">a) упражнение: conjugations</a></h2>
+            <h2><a href="/exercises/conjugations">упражнение: conjugations</a></h2>
+            <small>practice conjugation</small>
             <br>
         </article>
     </main>
