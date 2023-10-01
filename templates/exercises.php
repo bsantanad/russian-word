@@ -25,6 +25,11 @@
             <small>practice conjugation</small>
             <br>
         </article>
+        <article>
+            <h2><a href="/exercises/dialogues">упражнение: dialogues</a></h2>
+            <small>practice reading comprehension</small>
+            <br>
+        </article>
     </main>
 </body>
 </html>
