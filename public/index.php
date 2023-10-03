@@ -15,6 +15,7 @@ if ($code != 0){
 }
 
 function router($request_uri, $routes) {
+    $request_uri = rtrim($request_uri, '/');
 
     /* route is a top level one */
     if (array_key_exists($request_uri, $routes)) {
