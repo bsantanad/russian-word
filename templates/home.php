@@ -18,6 +18,13 @@
     </header>
     <main>
         <article>
+            <h2><a href="/posts/prep-personal.html">
+                урок: prep. case for pronouns & что as a conjunction
+            </a></h2>
+            <small>октябрь 03, 2023</small>
+            <br>
+        </article>
+        <article>
             <h2><a href="/posts/prepositions.html">урок: prepositions</a></h2>
             <small>сентябрь 27, 2023</small>
             <br>
