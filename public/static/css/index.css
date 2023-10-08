@@ -1,0 +1,161 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+body {
+    background-color: #912418;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    width: 100%;
+    font-size: 4em;
+    padding-left: 0.5em;
+}
+
+.head > h1 {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.articles {
+    font-size: 2em;
+}
+
+.left-articles {
+    width: 60%;
+}
+
+.articles {
+    width: 40%;
+}
+
+.articles > ul > li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 0.5em;
+    display: flex;
+    align-items: end;
+}
+.articles > ul > li > h3{
+    margin: 0
+}
+
+hr {
+    margin-top: 1em;
+    border-top: 1px solid white;
+}
+
+.articles > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.articles > ul > li > a:link {
+    color: white;
+}
+
+.articles > ul > li > a:active {
+    color: white;
+}
+
+.articles > ul > li > a:visited {
+    color: white;
+}
+
+.articles > ul > li > a:hover {
+    color: #ff9f1c;
+}
+
+
+.articles > ul > li > .right-note {
+    margin-top: 0;
+    margin-right: 1em;
+    margin-left: auto;
+    padding-bottom: 0.3em;
+    font-size: 0.5em;
+    font-style: italic;
+    text-decoration: underline; 
+    color: #ff9f1c;
+}
+
+.articles > ul > li > .right-note:link {
+    color: #ff9f1c;
+}
+
+.articles > ul > li > .right-note:active {
+    color: #ff9f1c;
+}
+
+.articles > ul > li > .right-note:visited {
+    color: #ff9f1c;
+}
+
+.articles > ul {
+    margin-top: 0.5em;
+}
+
+.articles > ul > li > small {
+    font-size: 0.5em;
+    margin: 0 1em;
+}
+
+@media all and (max-width: 950px) {
+    .left-articles {
+        width: 0%;
+    }
+
+    .articles {
+        width: 100%;
+    }
+}
+
+.nav-title {
+    color: #c2c2c2;
+    text-decoration: none;
+
+}
+.nav-title:link {
+    color: #c2c2c2;
+}
+
+.nav-title:visited {
+    color: #c2c2c2;
+}
+
+.nav-title:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.nav-title:active {
+    color: #c2c2c2;
+}
+
+#active  {
+    color: white;
+}
+
+h3 {
+    font-size: 0.8em;
+}
